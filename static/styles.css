@@ -1,0 +1,131 @@
+$colors: (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray-light"  $gray-500,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+);
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: darkgray;
+}
+
+h3{
+    color: aquamarine;
+}
+
+h5 {
+    text-align: center;
+    color: lightgreen;
+    line-height: 1.8;
+}
+
+#tryoutimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-top: 35px;
+    padding-bottom: 50px;
+
+}
+
+#box{
+    background-color: lightgrey;
+    border: 15px green ;
+    padding: 50px;
+    margin: 20px;
+}
+
+#github{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+}
+
+.carousel {
+    margin-bottom: 4rem;
+}
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+
+  #foot{
+    text-align: center;
+    color: white;
+
+}
+@media (min-width: 992px) {
+    .p-lg-5 {
+        padding: 3rem!important;
+    }
+}
+
+.my-5 {
+    /* margin-top: 3rem!important; */
+    margin-bottom: 3rem!important;
+}
+
+.mx-auto {
+    margin-right: auto!important;
+    /* margin-left: auto!important; */
+}
+
+#about{
+    background-color: powderblue;
+    padding: 3rem!important;
+    margin-bottom: 3rem!important;
+    margin-right: auto!important;
+
+}
+
+#four{
+    color: cornflowerblue;
+}
+
+#tryoutbox{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#game{
+    background-color: black;
+    font-family: 'Courier New', monospace;
+    color: white;
+    border: 10px groove deepskyblue;
+}
+
+#gameend{
+    background-color: black;
+    color: white;
+    text-align: center;
+}

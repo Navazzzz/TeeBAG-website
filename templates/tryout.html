@@ -1,0 +1,958 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    TeeBAG - Two Dead Men
+{% endblock %}
+
+{% block main %}
+
+
+        <div class="container" id="tryoutbox">
+          <br><br><div><h1><b>Two Dead Men</b></h1></div>
+          <div>In this <b>Text Based Adventure Game</b> you play as a Private Invenstigator named Elizabeth Bennett, working with the police, helping them to solve murders. Navigate your way through various decisions to eventually catch the criminal. Enjoy the story as it evolves and make decisions to follow the clues. Take not that you cannot undo the decisions you make so choose wisely.</div><br>
+          <br>
+          <button id="btn" class="btn btn-outline-info">Click to Play</button><br><br>
+        </div>
+        <!--game starts and character introduction-->
+        <div class="container" id="game">
+          <u>Characters</u><br>Player(Elizabeth Bennett) - Private investigator, consults with the police [Demigirl; she\her]<br>
+          Finn Macwood - player's partner, forensics expert for the police [Transmasc nonbinary; they\them]<br>
+          Greg Lestrade - detective, consults with player [Cis male; he\him]<br>
+          Rosa Diaz - detective, Bicon, Greg's partner [Cis female; she\her]<br>
+          Tony Stark - Data analyst/ tech whiz for the police [Cis male; he\him]<br>
+          Victim(s), potential suspects and other minor characters will be introduced as the story evolves<br>
+          <button id="c1" class="btn btn-outline-info">Continue</button><br><br>
+          <!--fisrt sat in room-->
+          <div id="1">Saturday July 23rd 2032 10.40 am<br>
+            You wake up to the feelings of sunlight hitting your face. Yesterday was your 30th birthday. You turn over on the bed and think back to the events of
+            last night. Looking around the room, you sigh gently and smile at the sight of Finn asleep next to you.
+            Its 10.41 in the morning. You check your phone for any new calls from clients when Finn stirs in their sleep. They turn towards you and mumble a gentle “good morning, sunshine”.<br>
+            “Good morning, angel”. You stroke their hair.<br><br>
+
+            Finn shuffles closer to you to give you a quick peck on your lips before nuzzling into your chest.<br>You,<br>
+            <button id="h2" class="btn btn-outline-info">Kiss their head and get up to make breakfast</button>
+            <button id="h1" class="btn btn-outline-info">Let them stay</button><br><br>
+            </div>
+
+            <div id="2_"><!--text of making breakie option-->
+              You kiss their head. “Im gonna go make breakfast. Do you want anything?”<br><br>
+
+              “No thanks. I'll come down in a bit and make myself coffee. Then we can watch TV or something.”<br><br>
+
+              <i>Ding</i><br><br>
+
+              A text for Finn. More importantly a text for Finn from work. You cross your fingers for murder. That would be a fun twist to a meh Saturday.<br><br>
+
+              “Babe, looks like they found a body in an apartment on Westview street. They’ve asked me to bring you along.”<br>
+              “Murder?”<br>
+              “They think so. Imma go get ready.”<br><br>
+
+              You smile gleefully.<br>
+              <button id="c2" class="btn btn-outline-info">Continue</button><br><br>
+            </div>
+            <div id="2"><!--text of letting them stay option-->
+              You stroke their back.<br>
+              “Last night was nice. :)”<br><br>
+
+              “It really was! I am so glad we found that new vegan place. Food was great!” Finn plays with your fingers.<br><br>
+
+              “How cute was the dog we met on our way back!” You kiss their head.<br><br>
+
+              “An absolute babie :) So, what do you want to do today? We pretty much have the whole day to ourselves. We could go roam around or just stay right here.”<br>
+              They boop your nose with theirs.<br><br>
+
+              <i>Ding</i><br><br>
+
+              A text for Finn. More importantly a text for Finn from work. So much for a day off. Atleast you both enjoy work.<br><br>
+
+              “Babe, looks like they found a body in an apartment on Westview street. They've asked me to bring you along.”<br>
+              “Murder?”<br>
+              “They think so. Imma go get ready.”<br>
+              <button id="c3" class="btn btn-outline-info" onclick="document.getElementById('arrive').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="arrive" style="display:none;"><!--going to crime scene and noticing glimpse of person-->
+              You both get ready and drive to the crime scene.<br><br>>12 pm<br>You park next to the other police cars and look around. The smell of unmanaged drainage abruptly hit you in the face as you get down. Paint is peeling off the walls of many of the buildings. Near an alleyway, bags of trash are piled up, many of which are attracting stray cats and dogs. The streetlight immediately above you is broken and its bulb is dangling in the air. This is not a good neighbourhood.
+              You make your way up a flight of stairs to the crime scene. You are greeted by Greg. He smiles as he sees you walk in. Finn walks away to examine the body.<br><br>
+              “Oh hey, Elizabeth, heard it was your birthday yesterday. Happy belated birthday then.<br>
+              “Thanks Greg! What makes you require my assistance today?”<br><br>Greg gestures you inside.<br>“Well for starters, no signs of forced entry so were assuming the victim knew the killer and-”<br><br>
+              “Greg, buddy you're gonna have to start from the beginning like their name, job all the basics.”<br><br>
+              “Right, yes sorry I forgot you just came in. Rosa will have all that info.”<br><br>
+              "As you start to walk in after Greg you hear a sound from the end of the hallway. You turn around as you catch a glimpse of someone walking away.<br>You,<br>
+                <button id="i1" class="btn btn-outline-info" onclick="document.getElementById('potwit1').style.display='block'">Follow them</button>
+                <button id="i2" class="btn btn-outline-info" onclick="document.getElementById('i_2').style.display='block'">Ignore and go into apartment</button><br><br>
+              </div>
+
+            <div id="potwit1" style="display:none;"><!--text of following glimpse person-->
+              You slowly make yourself to the end of the hallway. To the right you find another hall with more apartments. At the end of that hallway is a washing machine
+              and a drier, next to a garbage chute for tenants to throw out the trash. Nothing out of the ordinary.
+              Strange. You could’ve sworn you saw something. Just as you turn to walk back, you hear feet shuffling and turn around to find a man trying to climb
+              down the garbage chute. You run at him and drag him out.<br><br>
+
+              “Hello, I’m a PI working with the police. And you are?”<br><br>
+
+              “I’m just leaving!” He tries to run away but trips and falls on his face. You smell weed on him.<br>
+              Weed and regret.<br><br>
+
+              “Hey, man. I’m just a civilian I’m not going to hurt you or arrest you. Do you know anything about the person living in apartment 12D?” You
+              lean down next to him and take out the prop gun you own. You casually aim it at him. Everything about his body language suggests he knows something. He looks about
+              40 with an unkept beard and bags under his eyes. His clothes are mismatched and he wears a ring in a necklace around his neck. He seems jumpy and restless.<br><br>
+
+              “I- I don’t know anything. Just let me go!”<br><br>
+
+              “I know you know what’s going on. How did you know the victim in 12D? if you don’t cooperate, I might have to call
+              my buddy Greg over. He’s the detective I know you saw me talking to earlier.”<br><br>
+
+              “Wait, victim? JP’s dead? Oh no no no No! I didn’t do anything!”<br><br>
+
+              “I’m not saying you are buddy just tell me how you knew Mr. ‘JP’ and we can go on with your days.” This is getting annoying.<br><br>
+
+              “I’ll tell you what I know but you can’t snitch on me, okay?” He sits up.<br><br>
+
+              “My dude, I don’t even know your name.” You slowly put the gun away.<br><br>
+
+              “Okay okay. Right so JP is- was my” He looks around to see if anyone was listening. He leans in and whispers<br>
+
+              “He was my <i>dealer</i>”<br><br>
+
+              <i>Oh, that explains a lot</i><br><br>
+
+              “What was he dealing?”<br>
+              “Weed, LSD, occasionally Morphine. I’ve heard he even has coke for the right price.”<br>
+              “When was the last time you saw him?”<br>
+              “About four- five hours ago. I was coming to get my- ya know, but I saw a lady running out of his place in a hurry. Oh, and she had a gun.”<br>
+              “Could you describe her?”<br>
+              “I dunno, man. She was blonde uh- and had a brown coat on with blue lips I think on it?"<br><br>
+
+              <i>The blue lips seem important and also familiar</i><br><br>
+
+              “Thanks man that was helpf-”<br>
+              He runs off before you could say anything else.<br><br>
+
+              You make your way back to the apartment and start looking around. The apartment was quite bare; except for the furniture and small. Small in a way only one person
+              could live here comfortably. So, either the man from earlier was lying or the woman was just a guest.<br><br>
+
+              <i>Or a killer.</i><br>
+                <button id="c4" class="btn btn-outline-info" onclick="document.getElementById('apart0').style.display='block'">Continue</button><br><br>
+
+            </div><!--ignoring glimpse-->
+            <div id="i_2" style="display:none;">You ignore what you just saw walk into the apartment. It was probably another tenant. You start looking around and notice that its quite bare; except for the furniture and small. Small in a way only one person could live here comfortably.<br>
+              <button id="c5" class="btn btn-outline-info" onclick="document.getElementById('apart').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="apart0" style="display:none;"><!--inside apartment after going after person-->
+              The door and windows seemed to be in place so like Greg said the victim probably knew the killer. Finn is lying next to the body and
+              taking samples. The victim seemed to have been in his 50s. He had a buzzcut and his left hand is covered in what appeared to be a smoothie.<br><br>
+
+              <i>Wait. You know that smell. It’s the cinnamon roll smoothie from the small café next to the precinct. Finn tried it once and said it was disgusting. The smell even more so.</i><br><br>
+
+              The cup in which the drink came in is on the floor next to the body. There is a light brown cupboard next to the cup, which seemed to have stained instantly
+              on impact from the drink, except on one spot. You turn around to see Rosa standing next to Greg and going through her notepad. You walk up to her.<br><br>
+
+              “Hey, Rosa. What can you tell me about our friend here?”<br><br>
+
+              "Hey, Elizabeth. Right, so victim is Jake Paul, according to his ID. Born in 1980. Doesn’t seem to have a job or a phone. He was killed by single GSW to the chest. We haven’t found
+              any DNA on him yet other than his. The neighbour from 11D found the body when she came to give him his laundry. She said the door was open. Also, Finn
+              found this skull tattoo on his right arm. Unfortunately, there aren't any CCTV footage because this place doesn't have any cameras and neither do the streets.”<br><br>
+
+              “We think he used to be ex-army or special ops based on the tattoo. Tony's running it through the database now” Greg chimes in. “Which is why I called you in.
+              I have a hunch there’s something more than what meets the eye here.”<br><br>
+
+              “You have a point, Greg. Something’s up. Finn, whatcha got from me?”<br><br>
+
+              “Well, for starters he was killed about four or five hours ago. There’s this mark made with a knife, its sloppy but the wounding is consistent with the time of death window.”<br><br>
+
+              “So, he was killed and then marked? That sounds serial killer-y.”<br><br>
+
+              “Pretty much so. Rosa said she asked Tony to run it through the database too.”<br><br>
+
+              As Finn is talking, you notice a peculiar looking wound on the victim’s face. You ask Finn about it.<br>
+              “Well, it seems to be old. About 20 years atleast? You think it’s important?”<br><br>
+
+              “I don’t know. It could be.”<br><br>
+
+              “Oh, and also I found this." Finn shows you a lipstick stain on the collar of the victim's shirt. <i>They certainly aren't 'Blue Lips'.</i><br><br>
+
+              "Get Rosa or Greg to run the database for this too." You tell Finn.<br><br>
+
+              "Already on it."<br><br>
+
+              <i>The smell of the smoothie is still bothering you. You’re surprised no on else seems to notice so you decide to keep it to yourself.</i><br><br>
+
+              "Hey guys, I'm going to step outside for a bit for some air and to think. Keep me updated?<br><br>
+
+              Everyone acknowledges your request and carry on with their work.<br>
+                <button id="c6" class="btn btn-outline-info" onclick="document.getElementById('apart2').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="apart2" style="display:none;">
+              12.30 pm<br>
+              You step outside to organize your thoughts.<br>
+              <i>Victim seems to be a loner but he’s probably hiding something. I can’t do much until Rosa and Greg finish the background checks. Okay let’s focus on the Blue lips. Where have I-</i><br><br>
+
+              You suddenly remember a recent memory of Greg’s Bachelor Party. You, Greg, Finn, Rosa and two more detectives from the precinct first went to a strip club. You
+              four weren’t digging the vibe so you went back home to play some card games while the two other detectives stayed. The details aren’t important. What’s important is the strip club
+              you went to had a bright blue neon sign outside.<br>
+              Blue Lips.<br><br>
+
+              <i>Ding</i><br>
+              You get a text from Rosa.<br>
+              :Hey. DNA we got from the lipstick had a match. I’m sending you a file:<br><br>
+
+              The file has a mugshot of a blonde woman.<br>
+              <i>Like JP’s ‘client’ described</i><br>
+              You skim through the file. Poppy Henderson. No known address or job. Arrested once for public urination. Not much to see. You decide to pay Poppy a visit.<br><br>
+
+              1pm<br>
+              You drive to the Blue Lips strip club and park outside. As you walk inside you notice something you don’t remember seeing the last time you were here. A bright
+              sign sits next to the cashier which mentions,<br>
+              ‘OUR NEW SERVICES INCLUDE: FEMALE ESCORTS’<br>
+              You realize that’s probably what the suspect was doing at the victim’s place.<br><br>
+
+              You scan across the room. You can’t seem to find Poppy. You decide to wait. After politely declining several offers for lap dances, you finally see her come in from the backroom.<br>
+              <i>Her shift must’ve just started</i><br><br>
+
+              You call Greg, tell him what’s up and your whereabouts and he sends uniformed officers to pick her up.<br><br>
+
+              2pm<br>
+              Everyone’s back at the precinct. Greg and Rosa are about to interrogate Poppy while you hoping to listen in from behind the mirror. Before interrogation Greg comes to thank you
+              “Great job finding her! You’re really not going to tell me how you did?”<br><br>
+
+              “Maybe some other time.” You smile. Greg probably doesn’t think you will.<br><br>
+
+              “Anything I should know before going in?”<br><br>
+
+              “Oh, I have a source that claimed she had a gun?”<br><br>
+
+              “What kind of source…?”<br><br>
+
+              “Just trust me”<br><br>
+
+              Greg is very confused. He and Rosa begin interrogating.<br>
+                <button id="c7" class="btn btn-outline-info" onclick="document.getElementById('outside0').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="outside0" style="display:none;">
+              You settle down behind the mirror in the observation room. The suspect, Poppy is already seated and appears to be annoyed. Greg and Rosa walk into the room with a
+              file and sit down in front of her.<br><br>
+
+              “Poppy Henderson, 23 Years old, unemployed, well not really though, eh? Any idea what you’re doing here, miss?” Greg asks.<br>
+              “I didn’t pee next to the church again, if that’s what you’re asking.” Poppy scoffs.<br><br>
+
+              You study her body language. Either she has no clue what’s going on or she’s putting on an act.<br><br>
+
+              “Actually, we had something else in mind.” Rosa whips out a picture of the victim and places it in front of Poppy.<br><br>
+              “Do you recognize this man?”<br><br>
+
+              Poppy hesitates for a second and says no.<br><br>
+
+              “Look, miss. I know you’re trying to protect whatever client anonymity rules you have in place at the establishment you work at, but all that goes out the window when
+              one of your ‘clients’ get murdered. We have a witness placing you at the crime scene within the kill zone so either you confess or tell us what you know!”<br><br>
+
+              “Wh- Jake is dead? I didn’t kill him! He was alive when I left!”<br><br>
+
+              “So, you do know the victim. Why don’t you tell us everything you know?” Rosa eases back into her chair.<br><br>
+
+              You listen in to everything Poppy says from how Jake is a regular at the Blue lips, how he comes there every Friday at 3pm and how recently he started inviting Poppy over
+              when the escort service started. Poppy tells Greg and Rosa how everything seemed the same today too, but he seemed to be weird around a duffel bag he had in his apartment. She also
+              mentions the gun was fake and that it was part of an act she was doing with Paul. This was confirmed by the uniforms that searched her place and didn’t find an actual gun
+              and only the fake one in her purse. She also mentions seeing a black limo parked a few blocks down from where Jake’s apartment building was and how that the vehicle
+              did not at all fit in that area of the neighborhood. She also had a solid alibi for her whereabouts, but you already decided she was innocent a few seconds ago.<br><br>
+
+              3pm<br>
+              You go out for lunch and come back to the precinct to learn what Rosa found out about the victim and his background.<br><br>
+
+              “Hey, Rosa has some info I think you’ll find interesting.” You and Greg walk towards Rosa.<br><br>
+
+              “Okay, here’s what we know so far. Jake Paul was an absolute loner. His parents died when he was 6 and he grew up in the system. I also couldn’t find any other known relatives or
+              friends. I also ran the tattoo we found on him through all military databases with Tony’s help and found out that he joined the army in 1998. He was appointed the leader of a secret
+              spec ops team called the “Skull Crushers” in 2009. In 2010, they ran a covert operation in Dubai but, well the reports don’t say much but it seems like he made bad decisions that
+              got one of the team members, Matt Nelson killed behind enemy lines. Paul was put on trial, was found guilty and released from duty with no pension the same year.”<br><br>
+
+              Rosa shows you a picture of Matt Nelson. He seemed very young. The picture shows a charming man with blue eyes and blond hair smiling. The corner of the image states his birthdate,
+              20th of November 1990. Before you can say anything, Greg chimes in;<br><br>
+
+              “The tip you gave me on the drugs was useful to find out what he was doing to make money all these years with no pension,<br>
+                <button id="c11" class="btn btn-outline-info" onclick="document.getElementById('vito').style.display='block'">Continue</button><br><br>
+
+            </div>
+
+            <div id="apart" style="display:none;"><!--inside apartment without going after person-->
+              The door and windows seemed to be in place so like Greg said the victim probably knew the killer. Finn is lying next to the body and
+              taking samples. The victim seemed to have been in his 50s. He had a buzzcut and his left hand is covered in what appeared to be a smoothie.<br><br>
+
+              <i>Wait. You know that smell. It’s the cinnamon roll smoothie from the small café next to the precinct. Finn tried it once and said it was disgusting. The smell even more so.</i><br><br>
+
+              The cup in which the drink came in is on the floor next to the body. There is a light brown cupboard next to the cup, which seemed to have stained instantly
+              on impact from the drink, except on one spot. You turn around to see Rosa standing next to Greg and going through her notepad. You walk up to her.<br><br>
+
+              “Hey, Rosa. What can you tell me about our friend here?”<br>
+
+              "Hey, Elizabeth. Right, so victim is Jake Paul, according to his ID. Born in 1980. Doesn’t seem to have a job or a phone. He was killed by single GSW to the chest. We haven’t found
+              any DNA on him yet other than his. The neighbour from 11D found the body when she came to give him his laundry. She said the door was open. Also, Finn
+              found this skull tattoo on his right arm. Unfortunately, there aren't any CCTV footage because this place doesn't have any cameras and neither do the streets.”<br><br>
+
+              “We think he used to be ex-army or special ops based on the tattoo. Tony's running it through the database now” Greg chimes in. “Which is why I called you in.
+              I have a hunch there’s something more than what meets the eye here.”<br><br>
+
+              “You have a point, Greg. Something’s up. Finn, whatcha got from me?”<br><br>
+
+              “Well, for starters he was killed about four or five hours ago. There’s this mark made with a knife, its sloppy but the wounding is consistent with the time of death window.”<br><br>
+
+              “So, he was killed and then marked? That sounds serial killer-y.”<br><br>
+
+              “Pretty much so. Rosa said she’s running it through the database too.”<br><br>
+
+              As Finn is talking, you notice a peculiar looking wound on the victim’s face. You ask Finn about it.<br>
+              “Well, it seems to be old. About 20 years atleast? You think it’s important?”<br><br>
+
+              “I don’t know. It could be.”<br><br>
+
+              While Finn continues his examination you find something red on the victim's collar. You show Finn.<br>
+              "It looks like lipstick. I'll see if I can extract DNA and get Tony to run this as well."<br><br>
+
+              <i>The smell of the smoothie is still bothering you. You’re surprised no on else seems to notice so you decide to keep it to yourself.</i><br><br>
+
+              "Hey guys, I'm going to step outside for a bit for some air and to think. Keep me updated?<br><br>
+
+              Everyone acknowledges your request and carry on with their work. On your way out of the apartment, you notice a card on the floor for
+              an escort service with huge blue lips as the logo. You recognize the logo and sneakily swipe the card without anyone noticing.<br><br>
+
+              <button id="c8" class="btn btn-outline-info" onclick="document.getElementById('apart3').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="apart3" style="display:none;">
+              12.30 pm<br>
+              You step outside to organize your thoughts. You take out the card you took from the crime scene and look at it more closely.<br><br>
+
+              You suddenly remember a recent memory of Greg’s Bachelor Party. You, Greg, Finn, Rosa and two more detectives from the precinct first went to a strip club. You
+              four weren’t digging the vibe so you went back home to play some card games while the two other detectives stayed. The details aren’t important. What’s important is the strip club
+              you went to had a bright blue neon sign outside.<br>
+              Blue Lips.<br><br>
+
+              <i>Ding</i><br>
+              You get a text from Rosa.<br>
+              :Hey. DNA we got from the lipstick had a match. I’m sending you a file:<br><br>
+
+              The file has a mugshot of a blonde woman.<br><br>
+              You skim through the file. Poppy Henderson. No known address or job. Arrested once for public urination. Not much to see. You decide to pay Poppy a visit.<br><br>
+
+              1pm<br>
+              You drive to the Blue Lips strip club and park outside. As you walk inside you notice something you don’t remember seeing the last time you were here. A bright
+              sign sits next to the cashier which mentions,<br>
+              ‘OUR NEW SERVICES INCLUDE: FEMALE ESCORTS’<br>
+              You realize that’s probably what the suspect was doing at the victim’s place.<br><br>
+
+              You scan across the room. You can’t seem to find Poppy. You decide to wait. After politely declining several offers for lap dances, you finally see her come in from the backroom.
+              <i>Her shift must’ve just started</i><br><br>
+
+              You call Greg, tell him what’s up and your whereabouts and he sends uniformed officers to pick her up.<br><br>
+
+              2pm<br>
+              Everyone’s back at the precinct. Greg and Rosa are about to interrogate Poppy while you hoping to listen in from behind the mirror. Before interrogation Greg comes to thank you
+              “Great job finding her! You’re really not going to tell me how you did?”<br><br>
+
+              “Maybe some other time.” You smile. Greg probably doesn’t think you will.<br><br>
+
+              “Anything I should know before going in?”<br><br>
+
+              “That's all I know."<br><br>
+
+              Greg and Rosa Begin interrogating.<br><br>
+                <button id="c9" class="btn btn-outline-info" onclick="document.getElementById('outside1').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="outside1" style="display:none;">
+              You settle down behind the mirror in the observation room. The suspect, Poppy is already seated and appears to be annoyed. Greg and Rosa walk into the room with a
+              file and sit down in front of her.<br><br>
+
+              “Poppy Henderson, 23 Years old, unemployed, well not really though, eh? Any idea what you’re doing here, miss?” Greg asks.<br>
+              “I didn’t pee next to the church again, if that’s what you’re asking.” Poppy scoffs.<br><br>
+
+              You study her body language. Either she has no clue what’s going on or she’s putting on an act.<br><br>
+
+              “Actually, we had something else in mind.” Rosa whips out a picture of the victim and places it in front of Poppy.<br><br>
+              “Do you recognize this man?”<br><br>
+
+              Poppy hesitates for a second and says no.<br><br>
+
+              “Look, miss. I know you’re trying to protect whatever client anonymity rules you have in place at the establishment you work at, but all that goes out the window when
+              one of your ‘clients’ get murdered. We have a witness placing you at the crime scene within the kill zone so either you confess or tell us what you know!”<br><br>
+
+              “Wh- Jake is dead? I didn’t kill him! He was alive when I left!”<br><br>
+
+              “So, you do know the victim. Why don’t you tell us everything you know?” Rosa eases back into her chair.<br><br>
+
+              You listen in to everything Poppy says from how Jake is a regular at the Blue lips, how he comes there every Friday at 3pm and how recently he started inviting Poppy over
+              when the escort service started. Poppy tells Greg and Rosa how everything seemed the same today too, but he seemed to be weird around a duffel bag he had in his apartment. She also
+              mentions the gun was fake and that it was part of an act she was doing with Paul. This was confirmed by the uniforms that searched her place and didn’t find an actual gun
+              and only the fake one in her purse. She also mentions seeing a black limo parked a few blocks down from where Jake’s apartment building was and how that the vehicle
+              did not at all fit in that area of the neighborhood. She also had a solid alibi for her whereabouts, but you already decided she was innocent a few seconds ago.<br><br>
+
+              3pm<br>
+              You go out for lunch and come back to the precinct to learn what Rosa found out about the victim and his background.<br><br>
+
+              “Hey, Rosa has some info I think you’ll find interesting.” You and Greg walk towards Rosa.<br><br>
+
+              “Okay, here’s what we know so far. Jake Paul was an absolute loner. His parents died when he was 6 and he grew up in the system. I also couldn’t find any other known relatives or
+              friends. I also ran the tattoo we found on him through all military databases with Tony’s help and found out that he joined the army in 1998. He was appointed the leader of a secret
+              spec ops team called the “Skull Crushers” in 2009. In 2010, they ran a covert operation in Dubai but, well the reports don’t say much but it seems like he made bad decisions that
+              got one of the team members, Matt Nelson killed behind enemy lines. Paul was put on trial, was found guilty and released from duty with no pension the same year.”<br><br>
+
+              Rosa shows you a picture of Matt Nelson. He seemed very young. The picture shows a charming man with blue eyes and blond hair smiling. The corner of the image states his birthdate,
+              20th of November 1990. Before you can say anything, Greg chimes in;<br><br>
+
+              “The tip you gave me on the drugs was useful to find out what he was doing to make money all these years with no pension,<br>
+                <button id="c10" class="btn btn-outline-info" onclick="document.getElementById('vito').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="vito" style="display:none;"><!--end of two dif paths for following and not following common again-->
+              Turns out, he worked for Don Vito Corleone, the drug lord.”<br><br>
+
+              “Isn’t that the mafia boss who works at the mall as his day job?”<br>
+              “Yeah. It’ll be hard to track him down. But we’re going to need to, in order to find out if he has info or if he killed him.” Greg sips his tea.<br><br>
+
+              “You really think this is a mafia-boss-got-mad-killed-his-employee murder?” You ask Greg.<br><br>
+
+              “I think whatever evidence shows me. What do you think?”<br><br>
+
+              “Well, that would depend on whether the knife marks we found on the body has anything to do with Corleone. Also, if he worked at the mall, is there any chance someone saw him
+              talking to our victim?”<br><br>
+
+              “Way ahead of you. I already sent some guys to canvass the mall” Rosa munches on a donut.<br><br>
+
+              You smile and admire how efficient Rosa is.<br><br>
+
+              “Is there any chance this is related to the Nelson guy? Like someone from his life killed Jake to get revenge?”<br><br>
+
+              “Nice theory, but I did check, and it seems that Nelson’s only family was his sister and brother-in-law. He didn’t seem to have a partner. Also, the brother-in-law is some rich dude.
+              He was the one who got the government to try Jake. He and the sister were both at the trial and neither of them had any business anywhere near Westview Street. It doesn’t exactly
+              make sense. Oh, by the way, Finn said they had something to show you.”<br><br>
+
+              You bid farewell to the two detectives and make your way to the morgue.<br>
+                <button id="c12" class="btn btn-outline-info" onclick="document.getElementById('morgue').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="morgue" style="display:none;">
+              3.30pm<br>
+              You’re at the morgue. Finn’s face immediately lights up at the sight of you.<br><br>
+
+              “Hey, sunshine. I missed you”<br><br>
+
+              “I missed you too. Whatcha got for me?” You kiss their cheek. Finn still had their ‘autopsy gloves’ (as you called them) on. Otherwise, they would’ve given you a hug.<br><br>
+
+              “Well, I heard about the suspect they just brought in and can confirm that Jakey boy definitely had sex before he died. You were right about the knife wound being serial killer-y.
+              I found similar wounds on other victims from years 2009 to about 2013. All the victims were either international political figures or very rich people. According to reports,
+              the killer was never found.”<br><br>
+
+              <i>Very interesting.</i>
+
+              “So, either our ‘serial killer’ was a dude targeting VIP victims or…”<br><br>
+
+              “Government assassin!” You both exclaim at the same time. Your sharing-brain-cells ability has been at its peak recently. You both bonk your foreheads together.<br>
+              “Did you tell the detectives?”<br><br>
+
+              “I did. But since the killings had no killer and very little evidence, they said they were going to focus on finding info on the Corleones. My guess is the killer stopped his crimes
+              for a while and got back to it for some reason. That would make sense too, because this recent marking is a lot sloppy than the other victims’ ones.”<br><br>
+
+              “Huh. But it doesn’t explain why Jake Paul was killed. He was just some lowly contraband distributor. He didn’t have money, neither was he a political figure. So, either the
+              killer had a personal vendetta with him, or someone paid him good money for this. None of this really adds up.”<br><br>
+
+              “That’s what you’re here for” Finn does finger guns at you.<br><br>
+
+              “Oh, and I did some extra work with the face wound and I was able to make a 3D model of what supposedly could’ve made done that.” Finn shifts their attention to their work
+              computer and show you what they meant. The 3D modelling software shows a sturdy ring with a square face and small spikes along the sides, facing upwards. In the center was a
+              round gem.<br><br>
+
+              “So, he was punched by someone wearing this?”<br><br>
+
+              “I guess so. Well, today was supposed to be my off day so I don’t really have anything else to do. Gimme a bit to change and we can head home? Is that okay or do you have more work?”<br><br>
+
+              You think for a while. Based on what Finn has told you all signs point to government assassin.<br><br>
+
+              <i>But Jake doesn’t make sense as a 'comeback victim' for whoever the killer is. But he did work in the army.</i><br><br>
+
+              On a hunch you send a text to Tony asking for Matt Nelson’s sister’s info.<br><br>
+
+              “I do have one more thing I wanna try. Come with me?”<br><br>
+
+              “Always.”<br>
+                <button id="c13" class="btn btn-outline-info" onclick="document.getElementById('penny').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="penny" style="display:none;">
+              4.30pm<br>
+              Matt’s sister, Penny lived in a suburban area of the city. As you and Finn drive to her place, you can tell that only the richest people lived in the area.
+              You make your way towards a cul-de-sac, surrounded by three story houses with well-kept lawns and white picket fences, stopping in front of Penny and her husband’s house.<br><br>
+
+              “Fancy neighborhood innit?” Finn remarks in a silly voice. It makes you giggle. You knock at the door, introduce yourselves and follow the couple inside.<br><br>
+
+              The hallway heading to the living room is covered in campaign signs for the mayor’s election. It seemed that Penny’s husband, Arthur Wright was going to run for office.
+              His family owned most of the businesses in this area.<br><br>
+
+              “Sorry about the mess! We were just about to move all these to the garage.” Penny gestures you two to sit down.<br><br>
+
+              The house has a very hospitable vibe to it. Everything is very clean, perhaps due to the fact that there didn’t seem to be any children around. A cupboard to the right holds
+              souvenirs and cutlery.<br><br>
+
+              “So, you say someone was murdered and you think we can help?” Penny asks.<br><br>
+
+              “Well, yes. The victim is Jake Paul, who I assume you know?”<br><br>
+
+              Penny sighs. “He’s the man who got my brother killed. It’s been a long time since we’ve heard of him. I’m not sure how we can help, though” She rests her hand on
+              her husband’s thigh. This seems to be a tough topic for her but she’s managing. Her husband seems stiff and closed off.<br><br>
+
+              “Well, right now we don’t have a lot of evidence or clues to go on, so we decided to see if anyone related to Matt knew anything? Or else we’d like to see if you or Matt would’ve
+              known anyone who would’ve wanted to kill him. Did Matt have any friends or partners that you know of?”<br><br>
+
+              “Not really? Matt was pretty much a loner and I was his best friend. Other than me he just hung out with his army buddies from time to time.
+              I don’t think he had any girlfriends either. He usually told me everything. Me and Matty we were each other’s rock. Our dad left when we were small and mom had to work
+              three jobs just to keep the lights on in the house. We basically looked after each other. When he joined the army, I didn’t for the life of me think he'd leave us so soon. But
+              Artie’s always been there for me.”<br><br>
+
+              “How well did you know Matt, Mr. Wright?” Finn eats a biscuit that Penny offered.<br><br>
+
+              “Not very well. We were just acquaintances.”<br><br>
+
+              “More like rivals! You two couldn’t stand each other. Matty even asked me not to marry him!” Penny seems amused.<br><br>
+
+              “Yes, honey but we set apart our differences before he went on that mission remember?” Arthur seemed annoyed.<br><br>
+
+              You decide to,<br>
+                <button id="j2" class="btn btn-outline-info" onclick="document.getElementById('j_2').style.display='block'">Finish the tea you were offered</button>
+                <button id="j1" class="btn btn-outline-info" onclick="document.getElementById('j_1').style.display='block'">Get up and look around</button><br><br>
+            </div>
+
+            <div id="j_1" style="display:none;"><!--1 of 2 dif options at pennys-->
+              You get up and stretch your legs.<br> “Do you mind if I look around?”<br><br> “Not at all. Please go ahead.” Arthur seemed eager all of a sudden.<br><br> You decide to take a look inside the cupboard. Finn follows suit. It seems to be an antique cupboard filled with cutlery on the first shelf and unique souvenirs on the third. The second shelf was dedicated to pictures of Matt and his medals. One box in the corner houses something familiar. Finn sees it too and nudges you.<br><br>
+              “It’s the ring!” They whisper.<br><br>
+
+              It is in fact, the ring. The same ring that Finn made a model of a while ago. The same ring that was worn by whoever punched Jake all those years ago. This one was much
+              more colorful than the grey model though. The ring appears to be made of platinum with the spikey parts of gold. The gem in the middle seems to be a ruby.<br><br>
+
+              <i>My hunch really paid off.</i><br><br>
+
+              “Was this Matt’s?” Finn asks Penny.<br><br>
+
+              Oh yeah. Matt saved up to have it made when he joined the special army team he was in. Peculiar thing, isn’t it? That’s not the only one though. Matt had a similar one
+              made for one of his buddies. He said it was a gift for him because he got the job he always wanted. They seemed close.”<br><br>
+
+              “What was his name?”<br><br>
+
+              “Frank, I think? Frank Castle.”<br><br>
+
+              You both thank the Wrights and head out, excited by what you discovered.<br><br>
+
+              “I did not at all expect to find that ring here of all places! Shouldn’t you tell Greg what we found?”<br><br>
+
+              “I’ll tell him later. I’m kinda salty that he interrupted what could’ve been our day off.” You get in the car.<br><br>
+
+              “Honestly, same. Let’s go home and watch a movie instead.” Finn literally read your mind. You both go home and spend the next day relaxing.<br>
+                <button id="c14" class="btn btn-outline-info" onclick="document.getElementById('mond').style.display='block'">Continue</button><br><br>
+
+            </div>
+
+
+            <div id="j_2" style="display:none;"><!--2 of 2 dif options at pennys-->
+              You and Finn finish your tea and decide to leave, but Penny offers to show you some things that belonged to Matt in case it helps. Arthur excuses himself to go move the banners to the garage. She opens the cupboard next to you, takes out a box and gives it to you. You and Finn rummage around the box. Nothing out of the ordinary, just postcards he sent his sister, medals from the army and childhood photos. But then, Finn’s hand is pricked by one of the contents of the box. Upon closer inspection you find something that looks familiar. Finn sees it too and nudges you.<br><br>
+              “It’s the ring!” They whisper.<br><br>
+
+              It is in fact, the ring. The same ring that Finn made a model of a while ago. The same ring that was worn by whoever punched Jake all those years ago. This one was much
+              more colorful than the grey model though. The ring appears to be made of platinum with the spikey parts of gold. The gem in the middle seems to be a ruby.<br><br>
+
+              <i>My hunch really paid off.</i><br><br>
+
+              “Was this Matt’s?” Finn asks Penny.<br><br>
+
+              Oh yeah. Matt saved up to have it made when he joined the special army team he was in. Peculiar thing, isn’t it? That’s not the only one though. Matt had a similar one
+              made for one of his buddies. He said it was a gift for him because he got the job he always wanted. They seemed close.”<br><br>
+
+              “What was his name?”<br><br>
+
+              “Frank, I think? Frank Castle.”<br><br>
+
+              You both thank the Wrights and head out, excited by what you discovered.<br><br>
+
+              “I did not at all expect to find that ring here of all places! Shouldn’t you tell Greg what we found?”<br><br>
+
+              “I’ll tell him later. I’m kinda salty that he interrupted what could’ve been our day off.” You get in the car.<br><br>
+
+              “Honestly, same. Let’s go home and watch a movie instead.” Finn literally read your mind. You both go home and spend the next day relaxing.<br>
+                <button id="c15" class="btn btn-outline-info" onclick="document.getElementById('mond').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="mond" style="display:none;"><!--common-->
+              Monday July 25th 2032 9am<br>
+              You and Finn both take Sunday off and return to work on Monday. As you arrive at the precinct, you bump into Tony in the elevator.<br>
+              “Hey, sport. Haven’t seen you around in a while.”<br><br>
+
+              “I was here on Saturday? Were you not here then?” How did Tony find all the info on the case if he wasn’t-? Before you can even finish the thought Tony fills you in.<br>
+              “P.U.C.P.I.D.A.”<br><br>
+
+              You are very confused. “Puck? Peta? What in the-”<br><br>
+
+              “P.U.C.P.I.D.A. Portable ultra-secure complete police information database and archive. I digitized every bit and piece of case file, mugshot, inventory of seized items,
+              you name it whatever I could find, both digital and physical and stored copies of all of it in my personal secure server that can only be accessed by me. I invented it.”<br><br>
+
+              “Of course, you did.” Things make a bit more sense now. You wonder about the legality and ethics of it all but realize that Tony will find a loophole and have things his way one way
+              or the other.<br>
+              “So, you can work from home all the time?”<br><br>
+
+              “In theory, yes. Practically, also yes.”<br><br>
+
+              “So, what brings The Tony Stark to the precinct, in the flesh?”<br><br>
+
+              “Got bored at home. Anything I can do for you, sport?”<br><br>
+
+              “Actually yes. Could you look up someone named Frank Castle? I don’t really know anything about them. They might’ve been in the military though. It might be important for
+              the Westview Street murder.”<br><br>
+
+              “You betcha. Catch you later then.”<br><br>
+
+              Tony gets off one floor before you. <i>Any interaction with him is always fun</i> you think as you walk towards Greg’s desk.<br>
+                <button id="c15" class="btn btn-outline-info" onclick="document.getElementById('limo').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="limo" style="display:none;">
+              "Morning, Elizabeth." Greg greets you. "Haven’t had any new developments in the case, I’ll let you know, unless you have something for us?” Greg offers a bit of his sandwich. You politely decline.<br><br>
+
+              “I’m not entirely sure. But I did get a name. I already asked Tony to run it.”<br><br>
+
+              “Tony’s here?! Perfect! Finally!” Greg rushes towards the elevator, mumbling something about getting Tony to fix his baby formula covered PC for him. You decide to go speak with Rosa.<br><br>
+
+              “Hey. We’re still trying to find Corleone. Unis said they found a witness who saw Jake and Mr. mafia man get into a fight in front of the cafeteria at the mall the day before
+              he was killed. The witness heard him threatening to kill Jake too. We also finally found a street cam near the apartment and a black limo, just like Poppy described, enters and leaves
+              within the death window.”<br><br>
+
+              “Plates?”<br><br>
+
+              “Nah. They were blacked out. But guess who has the exact same model and colored limo?”<br><br>
+
+              “No way. Corleone?”<br><br>
+
+              “Yep. I mean besides the guys got a history of violent crimes, even murder. He got released from prison a few months ago and went right back to business.”<br><br>
+
+              “But does it match the crime scene?”<br><br>
+
+              “Let’s just say he has experience in shooting people dead.”<br>
+              You’re not completely convinced Corleone did it, but you understand Rosa’s perspective. She just wants to put a very bad person behind bars.<br><br>
+
+              “Heard you found something?” Rosa inquires.<br><br>
+
+              “Just a name from Jake’s past probably. I had a hunch. Oh, and look into government assassins.”<br><br>
+
+              “Hm. Will do.” Rosa nods at you. There doesn’t seem to be much else for you to do at the station, so you decide to work on some of your private cases.<br><br>
+                <button id="c16" class="btn btn-outline-info" onclick="document.getElementById('wed').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="wed" style="display:none;">
+              Wednesday July 27th 12.03pm<br>
+              You are going on about your day when you get a text from Greg. They caught Corleone. You rush to the precinct.<br><br>
+
+              12.30pm<br>
+              Greg, Rosa and Corleone are already in the interrogation room. You slide into the observation room to listen in on the investigation.<br><br>
+
+              “- Yes Jake works- worked for me but nothin’ illegal if that’s what you wanna know.”<br>
+              You can tell that this isn’t Vito’s first rodeo. If he hasn’t asked for a lawyer yet, then he’s probably doing this to amuse himself.<br><br>
+
+              “Then why do we have a witness that claims that Jake Paul was his drug dealer.”<br><br>
+
+              “Look, Jakey did work for me but that doesn’t mean he got drugs from me. Did your so-called witness say Jake got it from me?”<br><br>
+
+              “Not entirely-”<br><br>
+
+              “Well, there you go! Who knows what Jake gets up to when he’s not at work. Are we done here?”<br><br>
+
+              “Hang, on Mr. Corleone. One more thing, why’d you kill him?”<br><br>
+
+              “What, you couldn’t get me for drugs so now you’re gonna accuse me of murder? I didn’t kill him! Why would I kill him? Why would I kill anybody?”<br>
+              <i>He’s lying through his teeth.</i><br><br>
+
+              “I don’t know about anybody, but we have multiple witnesses who saw your fight on Friday and heard you threatening to kill Mr. Paul. We also
+              found your limo parked near his apartment during the death window. So, where were you on Saturday between 7 and 8 am, Mr. Corleone?” Rosa shows him the
+              street cam photo of the limousine. Vito looks at the image and seems to have gotten defensive.<br><br>
+
+              “Hey, hey! Hold on. First of all, this isn’t my limo! I only have one limo like this, and I gave it to my son so he could go to some party with his
+              friends. Secondly, I have an alibi! I was working between 7 and 8. The mall manager saw me as I was walking to my shop! You can check all of this!
+              I didn’t kill him!”<br><br>
+
+              “You still didn’t explain the fight though.”<br><br>
+
+              “Easy. We were fighting because that son of a bitch stole my dru- goods. He stole my goods.” He almost let himself slip. You know for sure Greg and
+              Rosa will grill him for that.<br><br>
+
+              “Your goods seem valuable? You haven’t reported a robbery yet.”<br><br>
+
+              “So? That ain’t a crime, is it? Look here, officers. He stole some things that belonged to me. I found out about it and yelled at him and then
+              fired him. I may have gotten heated up about it and said things I regret but that’s all. I didn’t even touch him. That man’s not worth it. Whatever
+              happened, he had it comin’. Not at all by means of me, of course.”<br><br>
+
+              “What exactly did he steal?”<br><br>
+
+              “Look, officers. I know my rights. I’m only here out of courtesy, out of respect for the law and you brave officers.<br>
+              <i>Rosa’s blood must be boiling right now.</i><br>
+              But what got stolen is my business. I will tell you that one of my boys saw Jakey carryin’ a white duffel bag which seemed heavy out of one of our l
+              ockers. Later, when we were doin’ inventory, some stuff was missin’. I Put two n’ two together and fired him. That is all.”<br>
+                <button id="c17" class="btn btn-outline-info" onclick="document.getElementById('wed2').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="wed2" style="display:none;">
+              Your gut tells you he didn’t kill Paul. But all the evidence and clues you have so far is so confusing. The victim is ex-military, he seemed to be a
+              bad guy but not worth killing for. Crime scene suggests serial killer, but the only matches are to a government assassin, who had no reason to kill some
+              lowly criminal. Also, he stole drugs? Nothing was found at the apartment and a limo at the crime scene?
+              Suddenly, you remember the shelves of the cupboard, all neatly packed except for one spot that was within the splash zone of the retched smoothie but
+              seemed clean. Maybe he really did steal the drugs, but where is it now? As you try to make sense of what is going on, Rosa and Greg step out of the
+              interrogation room. You walk towards them.<br><br>
+
+              “So, what’s going to happen to Vito?”<br><br>
+
+              “We’re still checking on his alibi and his limo, but if it comes back clean, we can’t hold him for long.”<br><br>
+
+              “Do you think he did it, Greg?”<br><br>
+
+              “Man, would I love to nail him for this. But, from experience I don’t think he did it. This victim is so off the grid. He mostly either stayed at home or
+              worked at the mall. He didn’t have any friends or associates. He’s a sketchy character, but no background checks revealed that he did anything worth
+              killing for or had any enemies. This case might as well end in a dead end.” Greg sighs.<br><br>
+
+              “Did you guys find any drugs or a white duffel bag in the apartment?”<br><br>
+
+              “I don’t think so? It would’ve come up. Why, you believe Vito’s fairy tales?” Rosa seems annoyed at the
+              whole caught-a-criminal-but-can’t-do-anything-to-put-him-in-jail scenario you have going on.<br><br>
+
+              “He might’ve been telling the truth about his ‘stolen goods’. There was a spot on the cupboard in the apartment that didn’t have smoothie on it.” You mention.<br><br>
+
+              “There was, wasn’t there? So, you think he hid it? Or Vito took it?” Greg’s interest seems to have returned.<br><br>
+
+              “Well, he didn’t have any storage lockers or anything like that to his name. I can get Tony to check again. Maybe he had a client?”<br><br>
+
+              “Or maybe Vito or one of his men took it back? Maybe the killer took it? Maybe one of his men is the killer and they took it back after killing him?”<br><br>
+
+              “Well, Vito’s alibi just came back solid, so did his son’s. I can check into all of his men with Tony’s help. This duffel bag might just help us
+              crack the case.” Rosa gets back to work.<br><br>
+
+              “I’ll leave that part of the job to you guys, meanwhile I’ll see if any of my contacts know anything about Vito or Paul that can help.”<br><br>
+
+              You all walk your separate ways and get to work. You spend the rest of the day gathering more information on the Corleones and their men and also the victim.
+              Some of your contacts help you find some of Jake Paul’s clients who all came back clean in your background checks other than of course, contacting Paul for a
+              fix every now and then. You and the detectives, with Tony’s help are able to get evidence against some of Vito’s men who committed assaults, B and E’s, illegal
+              trafficking and such, but none of them led back to Paul and of course you found no new leads based on crime scene data or government assassins. Another dead
+              end. You all head home hoping that tomorrow indeed will be a new day.<br>
+                <button id="c18" class="btn btn-outline-info" onclick="document.getElementById('th').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="th" style="display:none;">
+              Thursday July 28th 9am<br>
+              You make your way to the precinct. Greg said he has exciting news for you.<br><br>
+
+              “My oh my, guess what we found!” Greg seems very excited. Even Rosa seems amused. Tony’s sitting in a corner listening in on everything. Whatever
+              happened, he definitely helped.<br><br>
+
+              “Vito’s wife did it?” You throw in a completely baseless accusation to spice things up.<br><br>
+
+              “What? No no. We found out who Frank Castle is!”<br><br>
+
+              “Yeah. Greg contacted one of his buddies in the military and he gave us some info and then Tony did some fancy computer magic and we found him.” Rosa sips
+              her coffee.<br><br>
+
+              “Wait, what really? You brought him in already?”<br><br>
+
+              “Well, no we haven’t physically found him, but we found things that could possibly prove he killed Paul.” Greg shows you his picture. He’s a well-built
+              man in his 30s with black hair. From the look of scars on his face, you could tell that he’s been through a lot.<br><br>
+
+              “Turns out you were right about government assassins, sport.” Tony chimes in. “If the government needed someone to be taken care of, them asked him.
+              The marks on the victims body is an exact but sloppy match to all the marks he’s made on everyone he’s killed. Apparently, that’s how the government
+              knew that Frank killed their targets.”<br><br>
+
+              “So, it’s like a signal?”<br><br>
+
+              “Pretty much. He was recruited in 2008, just like his friend Matt, albeit they went their separate ways. He retired in 2015. They were close though. He was
+              even at Paul’s trial and guess who we have on video sucker punching Paul in the face?” Tony swivels around in his chair.<br><br>
+
+              “Oh, so Frank gave him that scar. Maybe he killed him too? For being responsible for the death of his friend? But why wait all these years…”<br><br>
+
+              “No clue. After Matt died, he didn’t seem to get out much. Stayed hidden. But Tony managed to find security feed of him enter the apartment building where
+              Paul lived within the death window. We’re doing our best to try and find him.”<br><br>
+
+              “Perfect! I’ll come in for the interrogation just to see this through then. Let me know when you do!”<br>
+              <i>That was easier than I expected.</i><br><br>
+
+              Before you walk away, Greg stops you to ask for a favor.<br>
+              “As Finn and you both know, Mary is expecting again and we’re having the baby shower this weekend. I’m swamped in work so do you think you could help us
+              with the flowers?”<br>
+                <button id="k1" class="btn btn-outline-info" onclick="document.getElementById('flo').style.display='block'">“Of course, Greg! Me and Finn can take care of that during lunch!”</button>
+                <button id="k2" class="btn btn-outline-info" onclick="document.getElementById('flo2').style.display='block'">“I have some cases to work on right now and Finn mentioned he’s busy too. Is there any other way we could help?”</button><br><br>
+            </div>
+
+            <div id="flo" style="display:none;">
+              “Thanks a lot! I appreciate you.” Greg walks off.<br><br>
+
+              12pm<br>
+              You visit the morgue to join Finn for lunch. Afterwards, you find a nearby flower boutique that opened recently and go inside. Greg requested pink and
+              baby blue flowers so as Finn looked around, you walk towards a tall gentleman who appeared to work there.<br><br>
+
+              “Excuse me, but I’m looking for baby blue and pink flowers and I was hoping you could-”<br>
+              The man turns around and you recognize him immediately. How could you not, because there in front of you, in the flesh was Frank Castle himself.<br><br>
+
+              “How can I help?” He asks politely.<br><br>
+
+              You are completely taken aback. “Will you give me a minute?” You rush off towards Finn.<br><br>
+
+              “Finn, psst PSSTT. It’s Frank. The Frank that’s our murder suspect holy shit!”<br><br>
+
+              “Woah, talk about coincidences! I’ll take care of the flowers you go tell Greg.” It’s times like these where you really appreciate how in sync you and Finn are.
+              You call Greg, tell him everything and after a while Frank is picked up by the police.<br>
+                <button id="c19" class="btn btn-outline-info" onclick="document.getElementById('inno').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="flo2" style="display:none;">
+              “Well, actually do you think you can find some info on some people during lunch while I go arrange the flowers? I’ll text you all the details.”<br><br>
+
+              “Of course. No problem.”<br><br>
+
+              12.30pm<br>
+              You’re working with some contacts to gather intel on the list of people Greg sent when suddenly, you get a call from Greg himself.<br><br>
+
+              “You’ll never believe who I ran into at the flower boutique! Frank Castle works here! I just arrested him up. You should get to the precinct.”<br>
+                <button id="c20" class="btn btn-outline-info" onclick="document.getElementById('inno').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="inno" style="display:none;">
+              On your way back to the police station, you wonder how Tony missed this. <i>He probably didn’t expect a man like Frank to be working in a flower boutique, of all places.</i><br><br>
+
+              1pm<br>
+              Rosa and Greg are interrogating Frank, who is denying all accusations while maintaining an emotionless face.<br><br>
+
+              “I told you, I didn’t kill him.”<br><br>
+
+              “Then why do we have footage of you entering his apartment building around the same time he was killed?”<br><br>
+
+              “I went into the wrong building. Was gonna go to the hardware.”<br><br>
+
+              “What did you do afterwards?”<br><br>
+
+              “I went home. I was alone.”<br><br>
+
+              “So, no one saw you?”<br><br>
+
+              “No. But I didn’t kill him and you don’t have solid evidence that I did.”<br><br>
+
+              “Look, man. We might not have evidence of that, but we know you were in the army, we know he got your friend killed, we know you punched him at his trial, his body was marked
+              with your signal and we have you entering his building to go kill him. All this evidence put in front of a jury is enough to get you convicted. So, just confess that you killed
+              him ‘cause you were mad he killed your buddy and stole his drugs and we can all get on with our days."<br><br>
+
+              “You don’t understand! I didn’t kill him! I can’t kill anymore.” Frank seemed sad and remorseful. “Matt wasn’t just my friend, he was-” He sighs.<br>
+              “Matt and I were in love. We met in the army and he was my soulmate. We were supposed to get married. He proposed to me right before he went on his final mission.”<br><br>
+
+              As you take in what Frank just said, you notice a ring on his finger. The same ring that Matt had. <i>It’s their engagement ring.</i> You feel Frank’s pain. You wonder how he’s held
+              on for so long after losing the love of their life. You also feel grateful that you have Finn.<br><br>
+
+              “After he was gone, I couldn’t focus anymore. I was depressed. I lost the ability to aim and shoot. I haven’t executed anyone since 2012. I don’t know anything
+              about any drugs, but I didn't kill him.”<br><br>
+
+              1.30pm<br>
+              Frank was just put in a holding cell until the detectives saw if they can find anything that proves his innocence. You don’t think he did it.<br><br>
+
+              “I’m sorry man, we couldn’t find anything in his favor and based on everything we have so far the jury is definitely going to think he’s guilty. Especially because we can’t
+              find any military records that mention his loss of skill.”<br><br>
+
+              “But he didn’t do it, Rosa! He didn’t even know about the drugs!”<br><br>
+
+              “It’s just how it is sometimes. Go home, get some rest. We’ll let you know if anything changes.”<br>
+                <button id="c21" class="btn btn-outline-info" onclick="document.getElementById('finn').style.display='block'">Continue</button><br><br>
+            </div>
+
+            <div id="finn" style="display:none;">
+              10pm<br>
+              You and Finn arrive home. You’re still let down by the fact that Frank will probably go to jail for a crime he did not commit. You settle down on the couch and Finn
+              pours you a glass of wine. They sit down next to you and you lean against them. Finn puts their arm around you.<br><br>
+
+              “I know he didn’t do it” You mumble as you nuzzle into their shoulder.<br><br>
+
+              “I know sunshine, but we can’t prove it yet.” Finn kisses your head. You absent-mindedly play with their fingers. Like before, you’re glad you have them and that they’re
+              here for you. You lean towards them for a small peck on their lips. Finn smiles gently.<br><br>
+
+              “It’s late, angel. You’ve been working so much these few days.” They kiss you back, lingering for a bit longer.<br>
+              “Let’s sleep early today. For me?”<br><br>
+
+              You mumble something back but agree eventually. Finn takes both of your glasses to the sink, washes them and comes back to stand in front of you.
+              “Come to bed, moonbeam.” Finn holds out their hand. You take it and they lead you to bed.<br><br>
+
+              You both get changed and slip under the covers. You both say your ‘I love you’s and you nuzzle into their chest. Finn strokes your hair until you both eventually fall asleep.<br><br>
+
+
+              You wake up early and end up spending almost the entire day trying to prove Frank’s innocence. You ask clients, your contacts, his co-workers at the flower boutique, even
+              Tony for help but all to no avail. For one last desperate attempt, you ask Finn to accompany you to Penny’s house to see if any of Matt’s belonging might help. Finn says yes without
+              hesitation.<br><br>
+
+              Saturday July 30th 10am<br>
+              You and Finn drive to Penny’s place. You knock on the door and you’re greeted by Penny.<br<>
+              “Hi, welcome back. I took out all of Matt’s old stuff and kept it in the living room. Please come in.”<br><br>
+
+              As you walk in you notice that Arthur isn’t home like he was last Saturday.<br>
+              “Arthur isn’t home?”<br><br>
+
+              “Oh, no. He had a work emergency come up and just left.”<br><br>
+
+              As you and Finn go through all of Matt’s belongings, this time you notice all the little things that indicated that Matt and Frank were indeed in love. You found old
+              postcards, letters and gifts which all were remnants of their relationship. But still, nothing to prove his innocence. Atleast, you tried. You thank Mrs. Wright and step out.
+              Finn squeezes your hand in support as you walk back to the car. You slowly start accepting that things are just like this sometimes. Then, you smell something familiar.<br><br>
+
+              <i>It’s that awful smoothie again.</i><br><br>You,<br>
+                <button id="l2" class="btn btn-outline-info" onclick="document.getElementById('fina2').style.display='block'">Go back home</button>
+                <button id="l1" class="btn btn-outline-info" onclick="document.getElementById('finale').style.display='block'">Investigate</button><br><br>
+            </div>
+
+            <div id="finale" style="display:none;">
+              You follow the smell to see where it’s coming from. Finn follows your lead. The smell leads you to a dumpster nearby Penny’s house.<br><br>
+
+              “Babe, I know you’re trying to help Frank, but this is a garbage bin-” You open the bin as Finn is talking. On top of all the garbage is an empty white duffel bag with the i
+              nitials, “JP” written on it and covered in cinnamon roll smoothie. An area of it seems to have someone’s blood on it. You just hit the jackpot.<br><br>
+
+              “Babe, you’re a genius!” Finn runs off to get gloves and an evidence bag from the car. You don’t know how any of it makes sense but you’re sure Arthur killed Jake. You call Greg.<br><br>
+
+              “Greg! I found evidence! It’s Arthur! Arthur Wright killed Jake. I think he’s on the run!”<br><br>
+
+              12pm<br>
+              “Border patrol just caught Arthur trying to flee the country. They’re bringing him in right now. Rosa found this notebook in his desk at work and the idiot had written down
+              everything about the murder. We also had ballistics match his gun to that which was used to shoot Paul. Man, if you hadn’t gone all freaky to free Frank we wouldn’t have caught
+              him. We all owe you!” Greg seems gleeful.<br><br>
+
+              “Also, we just got a solid alibi for Frank.” Rosa mentions “This dude just came in asking about Frank and it turns out he’s a closeted young man who Frank just started seeing. He
+              said Frank was with him while Jake was being killed, he even showed me photos. Turns out he lives in the building next to Jake’s. Crazy coincidence!”<br><br>
+
+              You’re happy things worked out. All in a day’s work. You go to your office to help out some other clients.<br><br>
+
+              THE END.<br>
+                <button id="c22" class="btn btn-outline-info" onclick="document.getElementById('gameend').style.display='block'">End game</button><br><br>
+            </div>
+
+            <div id="fina2" style="display:none;">
+              You ignore the smells, no matter how strong and go back home empty handed. A few hours, later Greg and Rosa call you.<br><br>
+
+              12pm<br>
+              “You were right about Frank being innocent. A detective who was going to meet up with Arthur Wright found this notebook where he had written down everything about the
+              murder. We sent some unis to his place and found the white duffel bag in the trash. It had Jake’s blood on it. He even left behind the murder weapon which ballistics confirmed
+              was a match.”<br><br>
+
+              “That’s great! Did you get him?”<br><br>
+
+              “No, we were too late. He’s escaped to Mexico. I guess it’s just like that sometimes. All in all, we really appreciate all the help you’ve given with this case.” Greg sighs.<br><br>
+
+              “Also, we just got a solid alibi for Frank.” Rosa mentions “This dude just came in asking about Frank and it turns out he’s a closeted young man who Frank just started seeing.
+              He said Frank was with him while Jake was being killed, he even showed me photos. Turns out he lives in the building next to Jake’s. Crazy coincidence!”<br><br>
+
+              You’re mad about Arthur getting away but atleast Frank is free. It really do be like that sometimes. You go to your office to help out some other clients.<br><br>
+
+              THE END.<br>
+                <button id="c23" class="btn btn-outline-info" onclick="document.getElementById('gameend').style.display='block'">End game</button><br><br>
+            </div>
+
+        </div>
+
+        <div class="container" style="display:none" id="gameend">
+          <br><br><h2>Thank you so much for playing our game!</h2><br><br>We hope you enjoyed the experience. Any and all feedback is appreciated, just email us at creatorteebag@gmail.com<br><br>
+        </div>
+        <script src="/static/script.js"></script>
+
+{% endblock %}
+

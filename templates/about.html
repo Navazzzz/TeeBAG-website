@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    TeeBAG - About
+{% endblock %}
+
+{% block main %}
+
+    <div style="background-color:cornflowerblue;" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center ">
+        <div id="about">
+            <h1>What's all this about?</h1><br>
+            <p class="lead fw-normal">As you might've gathered, this is a site for original <b>Text Based Adventure Games</b>. But also, this site is Navazzzz's Final Project for HarvardX's CS50: Introduction to Computer Science course.</p><br><br>
+
+            <div class="container">
+                <table style="background-color: powderblue;" class="table table-borderless">
+                    <thead>
+                        <tr>
+                          <th scope="col">But, why TeeBAG?</th>
+                          <th style="color: powderblue;" scope="col">But, why TeeBAG?</th>
+                          <th scope="col">Your time to shine.</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="width: 20%;"><p class="lead fw-normal">It's simple really. TeeBAG is just T. B. A. G. which stands for, you guessed it, Text Based Adventure Games.</p></td>
+                          <td style="width: 10%; color: powderblue;"><p class="lead fw-normal">It's simple really. TeeBAG is just T. B. A. G. which stands for, you guessed it, Text Based Adventure Games. hehj hejdej hejece hjejcekv </p></td>
+                          <td style="width: 20%;"><p class="lead fw-normal">The thing with calling this original is, we have to come up with new ideas for games. But, you can help by filling in a small form down below if you want to add your own games and help us out. Or, you could make things worse and request a custom-made game. Your choice.</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+        </div>
+
+        <div class="product-device shadow-sm d-none d-md-block"><img width="200" height="200" src="/static/logoblue.PNG"></div>
+    </div><br><br>
+
+    <div class="container" style="background-color:powderblue;">
+      <br><h3 id="four">Submit a custom-made game</h3><br>
+      <p>Fill in the three fields below to submit your own <b>Text Based Adventure Game</b> to our website, and we'll get back to you ASAP. We'd also like you to know that,</p>
+      <ul style="list-style-type:disc;">
+        <li>If you select 'Other' for the genre below, you will be prompted later to specify the genre(if you'd ike to) when we get back to you via email</li>
+        <li>If you have experience with HTML and PYTHON, we will send you a layout of how the game is to be structured via email</li>
+        <li>If you do not have any HTML experience, you can send us the story of your game and we will implement it for you</li>
+        <li>For any other inquiries, you can contact us at creatorteebag@gmail.com</li>
+      </ul>
+      <form action="/submit" method="post">
+        <div class="mb-3">
+          <label class="form-label">Email address</label>
+          <input type="email" class="form-control" autofocus name="email" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Name you'd like to be addressed by</label>
+          <input type="text" autocomplete="off" autofocus name="name" class="form-control" aria-describedby="textHelp">
+          <div id="textHelp" class="form-text">This is the name that will show up on emails and the Author column in List of Games.</div>
+        </div>
+        <div class="mb-3">
+          <select name="genre" class="form-select" aria-label="Default select example">
+            <option disable selected>Select the genre</option>
+            <option>Horror</option>
+            <option>Murder-Mystery</option>
+            <option>Fantasy</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <input type="submit" value="Send us an email!" class="btn btn-success"><br>
+      </form><br><br>
+
+
+      <h3 id="four">Request a custom-made game</h3><br>
+      <p>Fill in the three fields below to request your very own personalized <b>Text Based Adventure Game</b> to be made and added to our website, and we'll get back to you ASAP. We'd also like you to know that,</p>
+      <ul style="list-style-type:disc;">
+        <li>If you select 'Other' for the genre below, you will be prompted later to specify the genre(if you'd ike to) when we get back to you via email</li>
+        <li>Once we get back to you, a creator will be assigned to work with you on your own game</li>
+        <li>For any other inquiries, you can contact us at creatorteebag@gmail.com</li>
+      </ul>
+      <form action="/request" method="post">
+        <div class="mb-3">
+          <label class="form-label">Email address</label>
+          <input type="email" class="form-control" autofocus name="emailr" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Name you'd like to be addressed by</label>
+          <input type="text" autocomplete="off" autofocus name="namer" class="form-control" aria-describedby="textHelp">
+          <div id="textHelp" class="form-text">This is the name that will show up on emails and the Author column in List of Games.</div>
+        </div>
+        <div class="mb-3">
+          <select name="genrer" class="form-select" aria-label="Default select example">
+            <option disable selected>Select the genre</option>
+            <option>Horror</option>
+            <option>Murder-Mystery</option>
+            <option>Fantasy</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <input type="submit" value="Send us an email!" class="btn btn-success"><br>
+      </form><br>
+    </div><br>
+
+{% endblock %}
+

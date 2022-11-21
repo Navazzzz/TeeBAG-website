@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    TeeBAG - Creator Login
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <h1>Welcome Back!</h1><br><br>
+        <h2>Please enter your creator username and password below</h2><br><br>
+    </div>
+
+    <div class="container" style="background-color:powderblue;">
+      <br><br><form action="/login" method="post">
+        <div class="mb-3">
+          <label class="form-label">Username</label>
+          <input type="text" class="form-control" autofocus name="user">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" autocomplete="off" autofocus name="pass" class="form-control">
+        </div>
+        <input type="submit" value="Login" class="btn btn-success"><br>
+      </form><br><br>
+    </div><br><br>
+
+
+
+
+
+{% endblock %}
